@@ -1,0 +1,81 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 14,
+        "name": "Validate the login functionality with username and password",
+        "description": "",
+        "id": "validating-the-facebook-page;validate-the-login-functionality-with-username-and-password;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 8425073600,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User in login page",
+            "match": {
+              "location": "StepRun.user_in_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 150428700,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User should enter valid \"ramkumar\" and invalid \"hello@123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"ramkumar\"",
+                  "offset": 24
+                },
+                {
+                  "val": "\"hello@123\"",
+                  "offset": 47
+                }
+              ],
+              "location": "StepRun.user_should_enter_valid_and_invalid(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1720222100,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User sholud click login button",
+            "match": {
+              "location": "StepRun.user_sholud_click_login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 7450500,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Verify Error message should be displayed",
+            "match": {
+              "location": "StepRun.verify_Error_message_should_be_displayed()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Validating the facebook page",
+    "description": "",
+    "id": "validating-the-facebook-page",
+    "keyword": "Feature",
+    "uri": "src/test/resources/base.feature",
+    "tags": []
+  }
+]
